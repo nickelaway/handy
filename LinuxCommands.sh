@@ -182,7 +182,8 @@ xinput set-prop ‘ELAN Touchscreen’ ’Device Enabled' 0
 
 ## List symbols in a .so file
 nm -g foo.so
-nm -gC foo.so  # (for c++ symbols)
+# (for c++ symbols)
+nm -gC foo.so 
 
 ## Disassemble binary
 objdump -D -x -l -g -h foo.so
