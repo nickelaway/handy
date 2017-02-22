@@ -1,0 +1,33 @@
+## Plot multiple different files
+plot “foo.dat” using 1:2 title Foo, “bar.dat” using 1:2 title Bar
+
+## Plot multiple different graphs above one another
+set multiplot layout 5,1
+
+## X Axis is time, formatted as epoc time
+set xdata time
+set timefmt “%s”
+set format x “%H:%M:%S”
+set xrange [ "00:00:00" : "23:59:59" ]
+
+## Separate columns by commas/tabs
+set datafile separator ","
+set datafile separator "\t"
+
+## Plot to PNG
+set terminal png size 1024, 768
+set output 'baml-lmax-latency.png'
+
+
+## Plot selectively based on command
+plot "<grep foo output.dat" using 1:2
+
+## Bar chart
+set boxwidth 0.8 relative
+set style fill solid
+plot …. with boxes
+
+## Autoscale
+set autoscale
+
+
