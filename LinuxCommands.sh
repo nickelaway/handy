@@ -178,7 +178,7 @@ rfkill unblock bluetooth
 xinput --list
 
 ## Disable touchscreen
-xinput set-prop ‘ELAN Touchscreen’ ’Device Enabled' 0
+xinput set-prop 'ELAN Touchscreen' 'Device Enabled' 0
 
 ## List symbols in a .so file
 nm -g foo.so
