@@ -250,3 +250,6 @@ diff <(wget -q -O - URL1) <(wget -q -O - URL2)
 xlock -mode blank -geometry 1x1
 xtrlock
 
+## Convert video to MP3
+ffmpeg -i video.mp4 audio.mp3
+
