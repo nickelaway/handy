@@ -24,6 +24,9 @@ done < /etc/passwd
 ## Read a line, including line breaks
 read -r 
 
+## Read a line without displaying it as it is typed. For password prompts
+read -s
+
 ## multi line cat
 cat > foo.txt << EOF
 hello
