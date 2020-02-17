@@ -30,4 +30,12 @@ plot …. with boxes
 ## Autoscale
 set autoscale
 
+## include data in plot file
+gnuplot> $data << EOD
+1 1
+2 4
+3 2
+EOD
+gnuplot> plot $data using 1:2 with lines
+
 
