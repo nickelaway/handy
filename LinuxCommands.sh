@@ -253,3 +253,6 @@ xtrlock
 ## Convert video to MP3
 ffmpeg -i video.mp4 audio.mp3
 
+## Extract part of an MP3
+ mplayer full.mp3 -ss 2:43 -endpos 10 -ao pcm:file=/dev/stdout -really-quiet |  lame --preset extreme -h - shorter.mp3
+
