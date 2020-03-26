@@ -1,13 +1,13 @@
 ## Plot multiple different files
-plot “foo.dat” using 1:2 title Foo, “bar.dat” using 1:2 title Bar
+plot "foo.dat" using 1:2 title Foo, "bar.dat" using 1:2 title Bar
 
 ## Plot multiple different graphs above one another
 set multiplot layout 5,1
 
 ## X Axis is time, formatted as epoc time
 set xdata time
-set timefmt “%s”
-set format x “%H:%M:%S”
+set timefmt "%s"
+set format x "%H:%M:%S"
 set xrange [ "00:00:00" : "23:59:59" ]
 
 ## Separate columns by commas/tabs
@@ -38,4 +38,7 @@ gnuplot> $data << EOD
 EOD
 gnuplot> plot $data using 1:2 with lines
 
+
+## Modify a column value (divide by a thousand)
+plot "foo.dat" using 1:($2/1000) with lines
 
