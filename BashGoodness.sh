@@ -62,3 +62,7 @@ IFS=', ' read -a foo <<< $line; echo ${foo[1]}
 
 ## String contains
 if [[ $string == *Foo* ]]; then
+
+## Uppercase/Lowercase strings
+echo ${foo^^}
+echo ${foo,,}
