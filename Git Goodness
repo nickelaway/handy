@@ -1,0 +1,7 @@
+## Pull in latest changes from master and rebase changes from local branch on top of them
+git checkout my-branch
+git pull --rebase origin master
+# or
+git checkout my-branch
+git fetch origin            
+git rebase origin/master    
