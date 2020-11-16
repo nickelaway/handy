@@ -5,3 +5,7 @@ git pull --rebase origin master
 git checkout my-branch
 git fetch origin            
 git rebase origin/master    
+
+## Merge feature branch into main branch
+git checkout my_feature
+git merge main
