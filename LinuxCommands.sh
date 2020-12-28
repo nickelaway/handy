@@ -246,6 +246,9 @@ setxkbmap -layout gb
 ## Read from multiple processes
 diff <(wget -q -O - URL1) <(wget -q -O - URL2)
 
+## Sort and join two files
+join <(cat a.txt | sort | uniq) <(cat b.txt | sort | uniq)
+
 ## Transparent Screen Lock
 xlock -mode blank -geometry 1x1
 xtrlock
