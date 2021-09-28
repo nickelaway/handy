@@ -30,10 +30,10 @@ https://gist.github.com/rgreenjr/3637525
 
 ## Check if Autovacuum is enabled
 select name,setting from pg_settings where name in ('autovacuum', 'track_counts');
-
+```
 bash-5.0# ps -ef | grep vacuum
    49 postgres  0:00 postgres: autovacuum launcher   
-
+```
 ## Vacuum and Analyse stats
 SELECT schemaname,relname,autovacuum_count,vacuum_count,last_vacuum,last_autovacuum,autoanalyze_count,analyze_count,last_analyze,last_autoanalyze,n_mod_since_analyze  FROM pg_stat_user_tables;
 
