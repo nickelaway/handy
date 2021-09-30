@@ -25,6 +25,9 @@ set search_path to foo;
 ## Show query times
 \timing
 
+## Disable auto commit
+\set AUTOCOMMIT off
+
 ## useful commands
 https://gist.github.com/rgreenjr/3637525
 
