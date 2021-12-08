@@ -257,5 +257,13 @@ xtrlock
 ffmpeg -i video.mp4 audio.mp3
 
 ## Extract part of an MP3
- mplayer full.mp3 -ss 2:43 -endpos 10 -ao pcm:file=/dev/stdout -really-quiet |  lame --preset extreme -h - shorter.mp3
+mplayer full.mp3 -ss 2:43 -endpos 10 -ao pcm:file=/dev/stdout -really-quiet |  lame --preset extreme -h - shorter.mp3
+ 
+## Disable touchpad while typing
+# -i 0.8 tells to wait 0.8 second after last key press before re-enabling the touchpad.
+# -K makes it ignore Modifier+Key combos, such as Ctrl, Alt, and/or Shift + key combinations.
+# -t tells to disable tapping / scrolling only. Mouse movement is still possible while typing.
+# -d runs the command as daemon, in background.
+syndaemon -i 0.8 -K -t -d
+
 
