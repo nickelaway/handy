@@ -13,3 +13,8 @@ git merge my_feature
 ## Merge main into feature branch
 git checkout my_feature
 git merge main
+
+## Sign old commits
+# Signs all commits going back to the specified hash. 
+# Allows you to interactively select which commits you don't want to sign
+git rebase --exec 'git commit --amend --no-edit -n -S' -i <hash>^
