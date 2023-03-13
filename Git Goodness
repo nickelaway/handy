@@ -24,3 +24,7 @@ git rebase --exec 'git commit --amend --no-edit -n -S' -i <hash>^
 
 # See which commits are signed
 git log --show-signature
+
+# Pull changes after someone has force-pushed
+git fetch
+git reset origin/main --hard
