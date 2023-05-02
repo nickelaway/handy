@@ -266,4 +266,19 @@ mplayer full.mp3 -ss 2:43 -endpos 10 -ao pcm:file=/dev/stdout -really-quiet |  l
 # -d runs the command as daemon, in background.
 syndaemon -i 0.8 -K -t -d
 
+## Set Java versions with ASDF
+# list available versions
+asdf list java
+
+# show current version
+asdf current java
+
+# set version for the current shell
+asdf shell java zulu-17.38.21
+
+# set version globally
+asdf global java zulu-17.38.21
+
+
+
 
