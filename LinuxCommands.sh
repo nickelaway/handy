@@ -279,6 +279,7 @@ asdf shell java zulu-17.38.21
 # set version globally
 asdf global java zulu-17.38.21
 
-
+# Show image metadata (with ImageMagick)
+identify -verbose DSC_7349.JPG
 
 
