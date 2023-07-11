@@ -267,6 +267,9 @@ mplayer full.mp3 -ss 2:43 -endpos 10 -ao pcm:file=/dev/stdout -really-quiet |  l
 syndaemon -i 0.8 -K -t -d
 
 ## Set Java versions with ASDF
+# Tell asdf about java
+asdf plugin-add java
+
 # list available versions
 asdf list java
 
