@@ -285,6 +285,9 @@ asdf global java zulu-17.38.21
 # Show image metadata (with ImageMagick)
 identify -verbose DSC_7349.JPG
 
+# Show image metadata (with exiv2, which supports raw)
+exiv2 DSC_6597.NEF
+
 ## Resize an image (with ImageMagick)
 mogrify -resize 1250x1875 foo.jpg
 
