@@ -50,3 +50,7 @@ plot "foo.dat" using 1:2 pt 7
 
 ## Plot a contant value on one axis
 plot "foo.dat" using 1:(42)
+
+## See available colours and linetypes
+show colornames
+show linetypes
