@@ -44,3 +44,6 @@ plot "foo.dat" using 1:($2/1000) with lines
 
 ## Set colour of point
 plot "foo.dat" using 1:2 lt rgb "red"
+
+## Specify point type of circle
+plot "foo.dat" using 1:2 pt 7
