@@ -42,3 +42,5 @@ gnuplot> plot $data using 1:2 with lines
 ## Modify a column value (divide by a thousand)
 plot "foo.dat" using 1:($2/1000) with lines
 
+## Set colour of point
+plot "foo.dat" using 1:2 lt rgb "red"
