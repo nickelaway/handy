@@ -276,6 +276,9 @@ asdf list java
 # show current version
 asdf current java
 
+# install a particular version of a plugin
+asdf install nodejs 21.5.0
+
 # set version for the current shell
 asdf shell java zulu-17.38.21
 
