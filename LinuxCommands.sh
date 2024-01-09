@@ -270,8 +270,11 @@ syndaemon -i 0.8 -K -t -d
 # Tell asdf about java
 asdf plugin-add java
 
-# list available versions
+# list available versions installed locally
 asdf list java
+
+# list all available versions for a plugin
+asdf list-all kubectl
 
 # show current version
 asdf current java
