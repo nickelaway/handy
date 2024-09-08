@@ -297,4 +297,6 @@ exiv2 DSC_6597.NEF
 ## Resize an image (with ImageMagick)
 mogrify -resize 1250x1875 foo.jpg
 
+## Disable keyboard shortcut
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
 
