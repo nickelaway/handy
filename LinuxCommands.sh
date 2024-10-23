@@ -303,4 +303,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['']"
 ## Find what has a keyboard shortcut
 gsettings list-recursively org.gnome.desktop.wm.keybindings | grep "<Alt>F7"
 
+## Get the dimensions of a selected window
+xdotool selectwindow getwindowgeometry
 
+## Set the dimensions of a selected window
+wmctrl -r ':SELECT:' -e 1,351,6,1845,1422
