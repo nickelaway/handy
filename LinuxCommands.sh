@@ -308,3 +308,6 @@ xdotool selectwindow getwindowgeometry
 
 ## Set the dimensions of a selected window
 wmctrl -r ':SELECT:' -e 1,351,6,1845,1422
+
+## Show your IP address with Python
+python -c "import socket; print(socket.gethostbyname(socket.gethostname()))"
