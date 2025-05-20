@@ -16,7 +16,7 @@ set datafile separator "\t"
 
 ## Plot to PNG
 set terminal png size 1024, 768
-set output 'baml-lmax-latency.png'
+set output 'latency.png'
 
 
 ## Plot selectively based on command
