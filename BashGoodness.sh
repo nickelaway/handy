@@ -66,3 +66,6 @@ if [[ $string == *Foo* ]]; then
 ## Uppercase/Lowercase strings
 echo ${foo^^}
 echo ${foo,,}
+
+## Pure Bash Bible
+https://github.com/dylanaraps/pure-bash-bible
